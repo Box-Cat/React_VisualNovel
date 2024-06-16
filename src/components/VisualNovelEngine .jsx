@@ -14,7 +14,7 @@ const VisualNovelEngine = () => {
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
     if (nextPage !== undefined) {
-      setCurrentPage(nextPage);
+      return;
     } else {
       setCurrentPage(currentPage + 1);
     }
