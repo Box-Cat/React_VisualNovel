@@ -1,20 +1,15 @@
-:root {
-  --text-color: #000000;
-  --text-background-color: #ffffff;
-  --border-color: #000000;
-}
-
 *{
     padding:0;
     margin:0;
 }
 
-body{
-    /*Basic Font Styling*/
-    font-family: 'Arial', sans-serif;
-    font-size:22px;
-    color: var(--text-color);
+#background{
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
 
 #mainbox {
     /*Size of Main Container*/
