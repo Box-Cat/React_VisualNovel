@@ -6,13 +6,10 @@ import Background from './components/VisualNovelEngine ';
 
 
 const App = () => {
-
-
     return (
-        <div>
+        <>
           <VisualNovelEngine/>
-          
-        </div>
+        </>
     );
 };
 
