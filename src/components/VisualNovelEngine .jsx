@@ -4,8 +4,13 @@ import NameBox from './NameBox';
 import TextBox from './TextBox';
 import Background from './Background';
 import ProfileImage from './ProfileImage';
-import MainBox from './MainBox';
+import NameTextBox from './NameTextBox';
 import Button from './Button';
+
+//할 일
+//(1)버튼 트릭컬처럼
+//(2)텍스트창 트릭컬처럼
+//(3)방향키로 Before,Next 조종
 
 const VisualNovelEngine = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -21,7 +26,7 @@ const VisualNovelEngine = () => {
     if(currentPage===0) return; 
     else setCurrentPage(currentPage - 1);
   };
-  
+
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
     if (nextPage !== undefined) {
@@ -54,7 +59,7 @@ const VisualNovelEngine = () => {
   return (
     <Background data={data}>
       <ProfileImage sprites={sprites} />
-      <MainBox>
+      <NameTextBox>
         <NameBox name={page.Character} />
         <TextBox text={page.PageText} />
         {page.Options ? (
@@ -75,7 +80,7 @@ const VisualNovelEngine = () => {
           </div>
           
         )}
-      </MainBox>
+      </NameTextBox>
     </Background>
   );
 };

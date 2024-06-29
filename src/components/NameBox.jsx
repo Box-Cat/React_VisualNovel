@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledNameBox = styled.h2`
-    
+    flex: 1;
   `;
 
 

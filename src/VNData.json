@@ -1,24 +1,24 @@
 { 
     "Characters": {
-        "Viola": {
+        "코미": {
         	"Happy": "../src/assets/pink1.png",
         	"Thinking": "../src/assets/pink1.png",
         	"Peeved": "../src/assets/pink1.png"
         },
-        "Kylie": {
+        "버터": {
         	"Happy": "../src/assets/black1.png",
         	"Thinking": "../src/assets/black1.png",
         	"Peeved": "../src/assets/black1.png"
         },
-        "Anna": {
+        "에르핀": {
         	"Happy": "../src/assets/blue1.png",
         	"Thinking": "../src/assets/blue1.png",
         	"Peeved": "../src/assets/blue1.png"
         },
-        "Me": {
-        	"Happy": "",
-        	"Thinking": "",
-        	"Peeved": ""
+        "교주": {
+        	"Happy": "../src/assets/me1.png",
+        	"Thinking": "../src/assets/me1.png",
+        	"Peeved": "../src/assets/me1.png"
         }
     },
     
@@ -26,75 +26,73 @@
     	"Background": "../src/assets/field1.jpg",
     	"PAGES": {
 			"Page0" : {
-				"Character": "Viola",
-				"Sprite": [{"Viola":"Happy"},{"Kylie":"Happy"}],
+				"Character": "코미",
+				"Sprite": [{"코미":"Happy"},{"버터":"Happy"}],
 				"PageText": "We're having a pop quiz today!"
 				
 			},
 			"Page1" : {
-				"Character": "Viola",
+				"Character": "코미",
 				"Sprite": "Happy",
-				"PageText": "And just so you know, the questions were made for me by Miss Smith next door. "
+				"PageText": "And just so you know, the questions were made for 교주 by Miss Smith next door. "
 				
 			},
 			"Page2" : {
-				"Character": "Kylie",
+				"Character": "버터",
 				"Sprite": "Peeved",
-				"PageText": "Ms. Smith's quizzes are always harder than Viola's."
+				"PageText": "Ms. Smith's quizzes are always harder than 코미's."
 				
 			},
 			"Page3" : {
-				"Character": "Anna",
-				"Sprite": [{"Kylie":"Peeved"},{"Anna":"Peeved"}],
+				"Character": "에르핀",
+				"Sprite": [{"버터":"Peeved"},{"에르핀":"Peeved"}],
 				"PageText": "Yeah..."
 			},
 			"Page4" : {
-				"Character": "Viola",
+				"Character": "코미",
 				"Sprite": "Happy",
 				"PageText": "Good luck everyone! I'll be taking the quiz myself."
 				
 			},
 			"Page5" : {
-				"Character": "Viola",
+				"Character": "코미",
 				"Sprite": "Thinking",
 				"PageText": "..."
 				
 			},
 			"Page6" : {
-				"Character": "Viola",
+				"Character": "코미",
 				"Sprite": "Peeved",
 				"PageText": "........."
 				
 			},
 			"Page7" : {
-				"Character": "Anna",
+				"Character": "에르핀",
 				"Sprite": "Happy",
 				"PageText": "Hey, she's having trouble!"
 				
 			},
 			"Page8" : {
-				"Character": "Kylie",
+				"Character": "버터",
 				"Sprite": "Thinking",
 				"PageText": "Yikes..."
 				
 			},
 			"Page9" : {
-				"Character": "Me",
-				"Sprite": "Restr",
+				"Character": "교주",
+				"Sprite": "Thinking",
+				"PageText": "Thank you for reading!"
+			},
+			"Page10" : {
+				"Character": "교주",
+				"Sprite": "Happy",
 				"PageText": " ",
 				"Options":
 				{
-					"Finish?": 10,
-					"Restart?": 0
-				}
-				
-			},
-			"Page10" : {
-				"Character": "Me",
-				"Sprite": "Thinking",
-				"PageText": "Thank you for reading!",
-				"NextPage": "End"
-				
+					"Restart?": 0,
+					"Finish?": 9
+				},
+				"NextPage": "END"
 			}
 		}
     }
