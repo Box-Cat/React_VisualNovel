@@ -1,16 +1,26 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import useKeypress from 'react-use-keypress';
 
-const StyledButton = styled.button`
-  /* 버튼에 대한 스타일링을 추가할 수 있습니다. */
+const StyledButton = styled.div`
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  background-color: red;
+  display: inline-block;
+  cursor: pointer;
 `;
 
-const Button = ({ onClick, children }) => {
+const Button = ({ onClick, onKeyDown, children }) => {
+  useKeypress(['ArrowLeft', 'ArrowRight'], (e) => {
+    if (e.key === 'ArrowLeft') onKeyDown('before');
+    else if (e.key === 'ArrowRight') onKeyDown('next');
+  });
+
   return (
-    <StyledButton onClick={onClick}>
+    <StyledButton onClick={onClick} >
       {children}
     </StyledButton>
-  )
-}
+  );
+};
 
 export default Button;

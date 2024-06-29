@@ -28,69 +28,70 @@
 			"Page0" : {
 				"Character": "코미",
 				"Sprite": [{"코미":"Happy"},{"버터":"Happy"}],
-				"PageText": "We're having a pop quiz today!"
+				"PageText": "1We're having a pop quiz today!"
 				
 			},
 			"Page1" : {
 				"Character": "코미",
 				"Sprite": "Happy",
-				"PageText": "And just so you know, the questions were made for 교주 by Miss Smith next door. "
+				"PageText": "2And just so you know, the questions were made for 교주 by Miss Smith next door. "
 				
 			},
 			"Page2" : {
 				"Character": "버터",
 				"Sprite": "Peeved",
-				"PageText": "Ms. Smith's quizzes are always harder than 코미's."
+				"PageText": "3Ms. Smith's quizzes are always harder than 코미's."
 				
 			},
 			"Page3" : {
 				"Character": "에르핀",
 				"Sprite": [{"버터":"Peeved"},{"에르핀":"Peeved"}],
-				"PageText": "Yeah..."
+				"PageText": "4Yeah..."
 			},
 			"Page4" : {
 				"Character": "코미",
 				"Sprite": "Happy",
-				"PageText": "Good luck everyone! I'll be taking the quiz myself."
+				"PageText": "5Good luck everyone! I'll be taking the quiz myself."
 				
 			},
 			"Page5" : {
 				"Character": "코미",
 				"Sprite": "Thinking",
-				"PageText": "..."
+				"PageText": "6..."
 				
 			},
 			"Page6" : {
 				"Character": "코미",
 				"Sprite": "Peeved",
-				"PageText": "........."
+				"PageText": "7........."
 				
 			},
 			"Page7" : {
 				"Character": "에르핀",
 				"Sprite": "Happy",
-				"PageText": "Hey, she's having trouble!"
+				"PageText": "8Hey, she's having trouble!"
 				
 			},
 			"Page8" : {
 				"Character": "버터",
 				"Sprite": "Thinking",
-				"PageText": "Yikes..."
+				"PageText": "9Yikes..."
 				
 			},
 			"Page9" : {
 				"Character": "교주",
 				"Sprite": "Thinking",
-				"PageText": "Thank you for reading!"
+				"PageText": "10Thank you for reading!"
 			},
 			"Page10" : {
 				"Character": "교주",
 				"Sprite": "Happy",
-				"PageText": " ",
+				"PageText": "11 ",
 				"Options":
 				{
 					"Restart?": 0,
-					"Finish?": 9
+					"Finish?": 9,
+					"Another?": 3
 				},
 				"NextPage": "END"
 			}

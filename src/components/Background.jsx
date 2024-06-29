@@ -10,7 +10,6 @@ const Background = ({ data, children }) => {
     background-repeat: no-repeat;
     position: relative;
     background-image: url(${data.Scene1.Background});
-    padding: '20px';
   `;
 
   const StyledMainBox = styled.div`

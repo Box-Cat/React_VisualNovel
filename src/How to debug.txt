@@ -1,4 +1,0 @@
-1.Press F5
-2.Input ' npm run dev ' in cmd terminal
-3.Refresh the web page
-4.Add the break point.
