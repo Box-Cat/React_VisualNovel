@@ -28,72 +28,77 @@
 			"Page0" : {
 				"Character": "코미",
 				"Sprite": [{"코미":"Happy"},{"버터":"Happy"}],
-				"PageText": "1We're having a pop quiz today!"
+				"PageText": "0We're having a pop quiz today!"
 				
 			},
 			"Page1" : {
 				"Character": "코미",
 				"Sprite": "Happy",
-				"PageText": "2And just so you know, the questions were made for 교주 by Miss Smith next door. "
+				"PageText": "1And just so you know, the questions were made for 교주 by Miss Smith next door. "
 				
 			},
 			"Page2" : {
 				"Character": "버터",
 				"Sprite": "Peeved",
-				"PageText": "3Ms. Smith's quizzes are always harder than 코미's."
+				"PageText": "2Ms. Smith's quizzes are always harder than 코미's."
 				
 			},
 			"Page3" : {
-				"Character": "에르핀",
+				"Character": "에르핀,네르",
 				"Sprite": [{"버터":"Peeved"},{"에르핀":"Peeved"}],
-				"PageText": "4Yeah..."
+				"PageText": "3Yeah..."
 			},
 			"Page4" : {
 				"Character": "코미",
 				"Sprite": "Happy",
-				"PageText": "5Good luck everyone! I'll be taking the quiz myself."
+				"PageText": "4Good luck everyone! I'll be taking the quiz myself."
 				
 			},
 			"Page5" : {
 				"Character": "코미",
 				"Sprite": "Thinking",
-				"PageText": "6..."
+				"PageText": "5..."
 				
 			},
 			"Page6" : {
 				"Character": "코미",
 				"Sprite": "Peeved",
-				"PageText": "7........."
+				"PageText": "6........."
 				
 			},
 			"Page7" : {
 				"Character": "에르핀",
 				"Sprite": "Happy",
-				"PageText": "8Hey, she's having trouble!"
+				"PageText": "7Hey, she's having trouble!"
 				
 			},
 			"Page8" : {
 				"Character": "버터",
 				"Sprite": "Thinking",
-				"PageText": "9Yikes..."
+				"PageText": "8Yikes..."
 				
 			},
 			"Page9" : {
 				"Character": "교주",
 				"Sprite": "Thinking",
-				"PageText": "10Thank you for reading!"
+				"PageText": "9Thank you for reading!"
 			},
 			"Page10" : {
 				"Character": "교주",
 				"Sprite": "Happy",
-				"PageText": "11 ",
+				"PageText": "10 ",
 				"Options":
 				{
 					"Restart?": 0,
-					"Finish?": 9,
+					"Finish?": 11,
 					"Another?": 3
-				},
-				"NextPage": "END"
+				}
+			},
+			"Page11" : {
+				"Character": "교주",
+				"Sprite": "Happy",
+				"PageText": "11 오와리다",
+				"NextPage": "END" 
 			}
 		}
     }

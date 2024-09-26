@@ -24,7 +24,7 @@ const VisualNovelEngine = () => {
 
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
-    if (nextPage !== undefined) return;
+    if (nextPage !== undefined) return; //"NextPage": "END" 가 있으면 Next 버튼 비활성화
     else setCurrentPage(currentPage + 1);
   };
 
