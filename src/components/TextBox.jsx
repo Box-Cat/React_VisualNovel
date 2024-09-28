@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 
@@ -15,12 +15,23 @@ const StyledTextBox = styled.div`
 `;
 
 
-
-const TextBox = ({text}) => {
-
+const TextBox = ({text, typingSpeed = 20}) => {
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
   
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeoutId = setTimeout(() => {
+        setDisplayText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, typingSpeed);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [currentIndex, text, typingSpeed]);
+
   return (
-    <StyledTextBox>{text}</StyledTextBox>
+    <StyledTextBox>{displayText}</StyledTextBox>
   )
 }
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import jsonData from '../VNData.json';
 import NameBox from './NameBox';
 import TextBox from './TextBox';
