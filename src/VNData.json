@@ -1,105 +1,172 @@
-{ 
-    "Characters": {
-        "코미": {
-        	"Happy": "../src/assets/pink1.png",
-        	"Thinking": "../src/assets/pink1.png",
-        	"Peeved": "../src/assets/pink1.png"
-        },
-        "버터": {
-        	"Happy": "../src/assets/black1.png",
-        	"Thinking": "../src/assets/black1.png",
-        	"Peeved": "../src/assets/black1.png"
-        },
-        "에르핀": {
-        	"Happy": "../src/assets/blue1.png",
-        	"Thinking": "../src/assets/blue1.png",
-        	"Peeved": "../src/assets/blue1.png"
-        },
-        "교주": {
-        	"Happy": "../src/assets/me1.png",
-        	"Thinking": "../src/assets/me1.png",
-        	"Peeved": "../src/assets/me1.png"
-        }
+{
+  "Characters": {
+    "코미": {
+      "Happy": "../src/assets/pink1.png",
+      "Thinking": "../src/assets/pink1.png",
+      "Peeved": "../src/assets/pink1.png"
     },
-    
-    "Scene1": {
-    	"Background": "../src/assets/field1.jpg",
-    	"PAGES": {
-			"Page0" : {
-				"Character": "코미",
-				"Sprite": [{"코미":"Happy"},{"버터":"Happy"}],
-				"PageText": "0We're having a pop quiz today!"
-				
-			},
-			"Page1" : {
-				"Character": "코미",
-				"Sprite": "Happy",
-				"PageText": "1And just so you know, the questions were made for 교주 by Miss Smith next door. "
-				
-			},
-			"Page2" : {
-				"Character": "버터",
-				"Sprite": "Peeved",
-				"PageText": "2Ms. Smith's quizzes are always harder than 코미's."
-				
-			},
-			"Page3" : {
-				"Character": "에르핀,네르",
-				"Sprite": [{"버터":"Peeved"},{"에르핀":"Peeved"}],
-				"PageText": "3Yeah..."
-			},
-			"Page4" : {
-				"Character": "코미",
-				"Sprite": "Happy",
-				"PageText": "4Good luck everyone! I'll be taking the quiz myself."
-				
-			},
-			"Page5" : {
-				"Character": "코미",
-				"Sprite": "Thinking",
-				"PageText": "5..."
-				
-			},
-			"Page6" : {
-				"Character": "코미",
-				"Sprite": "Peeved",
-				"PageText": "6........."
-				
-			},
-			"Page7" : {
-				"Character": "에르핀",
-				"Sprite": "Happy",
-				"PageText": "7Hey, she's having trouble!"
-				
-			},
-			"Page8" : {
-				"Character": "버터",
-				"Sprite": "Thinking",
-				"PageText": "8Yikes..."
-				
-			},
-			"Page9" : {
-				"Character": "교주",
-				"Sprite": "Thinking",
-				"PageText": "9Thank you for reading!"
-			},
-			"Page10" : {
-				"Character": "교주",
-				"Sprite": "Happy",
-				"PageText": "10 ",
-				"Options":
-				{
-					"Restart?": 0,
-					"Finish?": 11,
-					"Another?": 3
-				}
-			},
-			"Page11" : {
-				"Character": "교주",
-				"Sprite": "Happy",
-				"PageText": "11 오와리다",
-				"NextPage": "END" 
-			}
-		}
+    "버터": {
+      "Happy": "../src/assets/black1.png",
+      "Thinking": "../src/assets/black1.png",
+      "Peeved": "../src/assets/black1.png"
+    },
+    "에르핀": {
+      "Happy": "../src/assets/blue1.png",
+      "Thinking": "../src/assets/blue1.png",
+      "Peeved": "../src/assets/blue1.png"
+    },
+    "교주": {
+      "Happy": "../src/assets/me1.png",
+      "Thinking": "../src/assets/me1.png",
+      "Peeved": "../src/assets/me1.png"
+    },
+    "캬롯": {
+      "Happy": "../src/assets/me1.png",
+      "Thinking": "../src/assets/me1.png",
+      "Peeved": "../src/assets/me1.png"
     }
+  },
+
+  "Scene1": {
+    "Background": "../src/assets/field1.jpg",
+    "PAGES": {
+      "Page0": {
+        "Character": "코미",
+        "Sprite": [{ "코미": "Happy" }, { "버터": "Happy" }],
+        "PageText": "버터, 나 오늘 기도를 하다가 세계수에게 계시를 받았어."
+      },
+      "Page1": {
+        "Character": "버터",
+        "Sprite": "Happy",
+        "PageText": "코미, 낮잠 잔거야?"
+      },
+      "Page2": {
+        "Character": "코미",
+        "Sprite": "Peeved",
+        "PageText": "맞아.\n 낮잠을 잤어. 내 말 좀 잘 들어봐.\n 내 볼에 새겨진 이 낫과 망치가 보여?\n이건  세계수의 계시임에 틀림없어."
+      },
+      "Page3": {
+        "Character": "에르핀,네르",
+        "Sprite": [{ "버터": "Peeved" }, { "에르핀": "Peeved" }],
+        "PageText": "3Yeah..."
+      },
+      "Page4": {
+        "Character": "코미",
+        "Sprite": "Happy",
+        "PageText": "4Good luck everyone! I'll be taking the quiz myself."
+      },
+      "Page5": {
+        "Character": "코미",
+        "Sprite": "Thinking",
+        "PageText": "5..."
+      },
+      "Page6": {
+        "Character": "코미",
+        "Sprite": "Peeved",
+        "PageText": "6........."
+      },
+      "Page7": {
+        "Character": "에르핀",
+        "Sprite": "Happy",
+        "PageText": "7Hey, she's having trouble!"
+      },
+      "Page8": {
+        "Character": "버터",
+        "Sprite": "Thinking",
+        "PageText": "8Yikes..."
+      },
+      "Page9": {
+        "Character": "교주",
+        "Sprite": "Thinking",
+        "PageText": "9Thank you for reading!"
+      },
+      "Page10": {
+        "Character": "교주",
+        "Sprite": "Happy",
+        "PageText": "10 ",
+        "Options": {
+          "Restart?": 0,
+          "Finish?": 11,
+          "Another?": 3
+        }
+      },
+      "Page11": {
+        "Character": "교주",
+        "Sprite": "Happy",
+        "PageText": "11 오와리다",
+        "NextPage": "END"
+      }
+    }
+  },
+  "Scene2": {
+    "Background": "../src/assets/field1.jpg",
+    "PAGES": {
+      "Page0": {
+        "Character": "코미",
+        "Sprite": [{ "코미": "Happy" }, { "버터": "Happy" }],
+        "PageText": "0We're having a pop quiz today!"
+      },
+      "Page1": {
+        "Character": "코미",
+        "Sprite": "Happy",
+        "PageText": "1And just so you know, the questions were made for 교주 by Miss Smith next door. "
+      },
+      "Page2": {
+        "Character": "버터",
+        "Sprite": "Peeved",
+        "PageText": "2Ms. Smith's quizzes are always harder than 코미's."
+      },
+      "Page3": {
+        "Character": "에르핀,네르",
+        "Sprite": [{ "버터": "Peeved" }, { "에르핀": "Peeved" }],
+        "PageText": "3Yeah..."
+      },
+      "Page4": {
+        "Character": "코미",
+        "Sprite": "Happy",
+        "PageText": "4Good luck everyone! I'll be taking the quiz myself."
+      },
+      "Page5": {
+        "Character": "코미",
+        "Sprite": "Thinking",
+        "PageText": "5..."
+      },
+      "Page6": {
+        "Character": "코미",
+        "Sprite": "Peeved",
+        "PageText": "6........."
+      },
+      "Page7": {
+        "Character": "에르핀",
+        "Sprite": "Happy",
+        "PageText": "7Hey, she's having trouble!"
+      },
+      "Page8": {
+        "Character": "버터",
+        "Sprite": "Thinking",
+        "PageText": "8Yikes..."
+      },
+      "Page9": {
+        "Character": "교주",
+        "Sprite": "Thinking",
+        "PageText": "9Thank you for reading!"
+      },
+      "Page10": {
+        "Character": "교주",
+        "Sprite": "Happy",
+        "PageText": "10 ",
+        "Options": {
+          "Restart?": 0,
+          "Finish?": 11,
+          "Another?": 3
+        }
+      },
+      "Page11": {
+        "Character": "교주",
+        "Sprite": "Happy",
+        "PageText": "11 오와리다",
+        "NextPage": "END"
+      }
+    }
+  }
 }

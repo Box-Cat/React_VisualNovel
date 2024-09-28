@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://cdn.jsdelivr.net/gh/webdesignfarm/font/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
+    font-family: 'LeeSeoyun', sans-serif;
     padding:0;
     margin:0;
     font-size:40px;

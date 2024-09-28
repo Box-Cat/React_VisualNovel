@@ -14,10 +14,21 @@ const StyledTextBox = styled.div`
   font-size: 0.9rem;
 `;
 
+// 텍스트를 줄바꿈 처리하는 함수
+const formatText = (text) => {
+  return text.split('\n').map((line, index) => (
+    <span key={index}>
+      {line}
+      <br />
+    </span>
+  ));
+};
+
 
 const TextBox = ({text, typingSpeed = 20}) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -31,7 +42,7 @@ const TextBox = ({text, typingSpeed = 20}) => {
   }, [currentIndex, text, typingSpeed]);
 
   return (
-    <StyledTextBox>{displayText}</StyledTextBox>
+    <StyledTextBox>{formatText(displayText)}</StyledTextBox>
   )
 }
 
