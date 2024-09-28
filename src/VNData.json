@@ -32,47 +32,47 @@
     "PAGES": {
       "Page0": {
         "Character": "코미",
-        "Sprite": [{ "코미": "Happy" }, { "버터": "Happy" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "버터, 나 오늘 기도를 하다가 세계수에게 계시를 받았어."
       },
       "Page1": {
         "Character": "버터",
-        "Sprite": [{ "버터": "Happy" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "코미, 낮잠 잔거야?"
       },
       "Page2": {
         "Character": "코미",
-        "Sprite": [{ "코미": "Peeved" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "맞아.\n 낮잠을 잤어. 내 말 좀 잘 들어봐.\n 내 볼에 새겨진 이 낫과 망치가 보여?\n이건  세계수의 계시임에 틀림없어."
       },
       "Page3": {
         "Character": "버터",
-        "Sprite": [{ "버터": "Peeved" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "그건 그냥, 배게에 눌려서 생긴 주름 아니야?"
       },
       "Page4": {
         "Character": "코미",
-        "Sprite": [{ "코미": "Peeved" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "이 볼을 잘 봐봐. 바나의 대장간에 보던 것과 비슷하지 않아?"
       },
       "Page5": {
         "Character": "코미",
-        "Sprite": [{ "코미": "Thinking" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "5..."
       },
       "Page6": {
         "Character": "코미",
-        "Sprite": [{ "코미": "Peeved" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "6........."
       },
       "Page7": {
         "Character": "에르핀",
-        "Sprite": [{ "에르핀": "Peeved" }],
+        "Sprite": [{ "에르핀": "Happy","Brightness":"1" }],
         "PageText": "7Hey, she's having trouble!"
       },
       "Page8": {
         "Character": "버터",
-        "Sprite": [{ "버터": "Thinking" }],
+        "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "8Yikes..."
       },
       "Page9": {

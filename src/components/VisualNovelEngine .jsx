@@ -41,9 +41,12 @@ const VisualNovelEngine = () => {
 
   const sprites = page.Sprite.map((s) => {
         const character = Object.keys(s)[0];
+        const brightness = Object.values(s)[1];
+
         return {
           character,
           sprite: data.Characters[character][s[character]],
+          brightness
         };
       });
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const StyledProfileImage = styled.div`
@@ -13,15 +12,25 @@ const StyledProfileImage = styled.div`
 const StyledImg = styled.img`
   width: 200px;
   height: 200px;
-  margin: 10px; /* 이미지 간격 조절을 위해 추가 */
+  margin: 10px; 
+  filter: brightness(${({ brightness }) => brightness}); 
 `;
 
 const ProfileImage = ({ sprites }) => {
+
   return (
     <StyledProfileImage>
-      {sprites.map(({ character, sprite }, index) => (
-        <StyledImg key={index} src={sprite} alt={character} />
-      ))}
+      {sprites.map(({ character, sprite, brightness }, index) => {
+        return(
+          <StyledImg
+            key={index}
+            src={sprite}
+            alt={character}
+            brightness={brightness} 
+          />
+        )
+
+      })}
     </StyledProfileImage>
   );
 };
