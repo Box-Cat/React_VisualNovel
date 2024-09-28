@@ -6,6 +6,8 @@ import Background from './Background';
 import ProfileImage from './ProfileImage';
 import NameTextBox from './NameTextBox';
 import Button from './Button';
+import OptionListContainer from './OptionListContainer';
+import OptionList from './OptionList';
 
 const VisualNovelEngine = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -52,37 +54,27 @@ const VisualNovelEngine = () => {
 
   return (
     <Background data={data}>
+      {page.Options &&
+        <OptionListContainer>
+          {Object.keys(page.Options).map((option, index) => (
+            <OptionList key={index} onClick={() => handleOptionClick(page.Options[option])}>
+              {option}
+            </OptionList>
+          ))}
+        </OptionListContainer>
+      }
       <ProfileImage sprites={sprites} />
       <NameTextBox>
         <NameBox name={page.Character} />
         <TextBox text={page.PageText} />
-        {page.Options ? (
-          <div>
-            {Object.keys(page.Options).map((option, index) => (
-              <Button
-                key={index}
-                onClick={() => handleOptionClick(page.Options[option])}
-              >
-                {option}
-              </Button>
-            ))}
-          </div>
-        ) : (
-          <div>
-            <Button
-              onKeyDown={handleButtonAction}
-              onClick={handleBeforePage}
-            >
-              Before
-            </Button>
-            <Button
-              onKeyDown={handleButtonAction}
-              onClick={handleNextPage}
-            >
-              Next
-            </Button>
-          </div>
-        )}
+        <div>
+          <Button onKeyDown={handleButtonAction} onClick={handleBeforePage}>
+            Before
+          </Button>
+          <Button onKeyDown={handleButtonAction} onClick={handleNextPage}>
+            Next
+          </Button>
+        </div>
       </NameTextBox>
     </Background>
   );

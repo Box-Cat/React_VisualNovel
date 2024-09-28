@@ -83,11 +83,11 @@
       "Page10": {
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
-        "PageText": "10 ",
+        "PageText": "10. 선택지 질문 ",
         "Options": {
-          "Restart?": 0,
-          "Finish?": 11,
-          "Another?": 3
+          "에슈르를 도발한다.": 0,
+          "에슈르에게 팩폭 공격을 한다.": 11,
+          "에슈르에게 꿀밤을 때린다.": 3
         }
       },
       "Page11": {
