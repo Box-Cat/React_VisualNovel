@@ -26,7 +26,8 @@ const VisualNovelEngine = () => {
 
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
-    if (nextPage !== undefined) return; //"NextPage": "END" 가 있으면 Next 버튼 비활성화
+    if (nextPage !== undefined)
+      return; //"NextPage": "END" 가 있으면 Next 버튼 비활성화
     else setCurrentPage(currentPage + 1);
   };
 
@@ -38,31 +39,34 @@ const VisualNovelEngine = () => {
     if (action === 'before') handleBeforePage();
     else if (action === 'next') handleNextPage();
   };
-  
+
   const page = data.Scene1.PAGES['Page' + currentPage];
 
   const sprites = page.Sprite.map((s) => {
-        const character = Object.keys(s)[0];
-        const brightness = Object.values(s)[1];
+    const character = Object.keys(s)[0];
+    const brightness = Object.values(s)[1];
 
-        return {
-          character,
-          sprite: data.Characters[character][s[character]],
-          brightness
-        };
-      });
+    return {
+      character,
+      sprite: data.Characters[character][s[character]],
+      brightness,
+    };
+  });
 
   return (
-    <Background data={data}>
-      {page.Options &&
+    <Background backgroundImage={page.Background}>
+      {page.Options && (
         <OptionListContainer>
           {Object.keys(page.Options).map((option, index) => (
-            <OptionList key={index} onClick={() => handleOptionClick(page.Options[option])}>
+            <OptionList
+              key={index}
+              onClick={() => handleOptionClick(page.Options[option])}
+            >
               {option}
             </OptionList>
           ))}
         </OptionListContainer>
-      }
+      )}
       <ProfileImage sprites={sprites} />
       <NameTextBox>
         <NameBox name={page.Character} />

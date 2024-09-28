@@ -1,15 +1,15 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Background = ({ data, children }) => {
+const Background = ({ backgroundImage, children }) => {
 
   const StyledBackground = styled.div`
     width: 100vw;
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover; 
     position: relative;
-    background-image: url(${data.Scene1.Background});
+    background-image: url(${backgroundImage});
   `;
 
   const StyledMainBox = styled.div`

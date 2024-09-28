@@ -28,59 +28,70 @@
   },
 
   "Scene1": {
-    "Background": "../src/assets/field1.jpg",
     "PAGES": {
       "Page0": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "버터, 나 오늘 기도를 하다가 세계수에게 계시를 받았어."
       },
       "Page1": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "코미, 낮잠 잔거야?"
       },
       "Page2": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "맞아.\n 낮잠을 잤어. 내 말 좀 잘 들어봐.\n 내 볼에 새겨진 이 낫과 망치가 보여?\n이건  세계수의 계시임에 틀림없어."
       },
       "Page3": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "그건 그냥, 배게에 눌려서 생긴 주름 아니야?"
       },
       "Page4": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "이 볼을 잘 봐봐. 바나의 대장간에 보던 것과 비슷하지 않아?"
       },
       "Page5": {
+        "Background": "../src/assets/furryForest1.png",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
-        "PageText": "5..."
+        "PageText": "5...",
+        "EventScene": "../src/assets/field1.jpg"
       },
       "Page6": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "6........."
       },
       "Page7": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "에르핀",
         "Sprite": [{ "에르핀": "Happy","Brightness":"1" }],
         "PageText": "7Hey, she's having trouble!"
       },
       "Page8": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "8Yikes..."
       },
       "Page9": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
         "PageText": "9Thank you for reading!"
       },
       "Page10": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
         "PageText": "10. 선택지 질문 ",
@@ -91,6 +102,7 @@
         }
       },
       "Page11": {
+        "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
         "PageText": "11 오와리다",
