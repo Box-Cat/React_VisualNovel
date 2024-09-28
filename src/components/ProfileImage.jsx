@@ -13,7 +13,6 @@ const StyledProfileImage = styled.div`
 const StyledImg = styled.img`
   width: 200px;
   height: 200px;
-  margin: 10px; 
   filter: brightness(${({ brightness }) => brightness}); 
 `;
 

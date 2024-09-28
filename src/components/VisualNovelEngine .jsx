@@ -8,6 +8,7 @@ import NameTextBox from './NameTextBox';
 import Button from './Button';
 import OptionListContainer from './OptionListContainer';
 import OptionList from './OptionList';
+import ButtonContainer from './ButtonContainer';
 
 const VisualNovelEngine = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -21,14 +22,13 @@ const VisualNovelEngine = () => {
 
   const handleBeforePage = () => {
     if (currentPage === 0) return;
-    else setCurrentPage(currentPage - 1);
+    setCurrentPage(currentPage - 1);
   };
 
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
-    if (nextPage !== undefined)
-      return; //"NextPage": "END" 가 있으면 Next 버튼 비활성화
-    else setCurrentPage(currentPage + 1);
+    if (nextPage !== undefined) return; //"NextPage": "END" 가 있으면 Next 버튼 비활성화
+    setCurrentPage(currentPage + 1);
   };
 
   const handleOptionClick = (option) => {
@@ -71,14 +71,14 @@ const VisualNovelEngine = () => {
       <NameTextBox>
         <NameBox name={page.Character} />
         <TextBox text={page.PageText} />
-        <div>
+        <ButtonContainer>
           <Button onKeyDown={handleButtonAction} onClick={handleBeforePage}>
             Before
           </Button>
           <Button onKeyDown={handleButtonAction} onClick={handleNextPage}>
             Next
           </Button>
-        </div>
+        </ButtonContainer>
       </NameTextBox>
     </Background>
   );

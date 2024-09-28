@@ -45,7 +45,7 @@
         "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
-        "PageText": "맞아.\n 낮잠을 잤어. 내 말 좀 잘 들어봐.\n 내 볼에 새겨진 이 낫과 망치가 보여?\n이건  세계수의 계시임에 틀림없어."
+        "PageText": "맞아. 낮잠을 잤어. 내 말 좀 잘 들어봐. \n 내 볼에 새겨진 이 낫과 망치가 보여? \n 이건  세계수의 계시임에 틀림없어."
       },
       "Page3": {
         "Background": "../src/assets/field1.jpg",
@@ -57,19 +57,18 @@
         "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
-        "PageText": "이 볼을 잘 봐봐. 바나의 대장간에 보던 것과 비슷하지 않아?"
+        "PageText": "이 볼을 잘 봐봐. \n 바나의 대장간에 보던 것과 비슷하지 않아?"
       },
       "Page5": {
-        "Background": "../src/assets/furryForest1.png",
+        "Background": "../src/assets/eventScene.png",
         "Character": "",
-        "Sprite": [],
-        "PageText": "5..."
+        "Sprite": []
       },
       "Page6": {
-        "Background": "../src/assets/field1.jpg",
-        "Character": "코미",
-        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
-        "PageText": "6........."
+        "Background": "../src/assets/eventScene.png",
+        "Character": "",
+        "Sprite": [],
+        "PageText": "빠악!!!"
       },
       "Page7": {
         "Background": "../src/assets/field1.jpg",
