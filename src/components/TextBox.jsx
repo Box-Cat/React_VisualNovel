@@ -12,6 +12,7 @@ const StyledTextBox = styled.div`
   background-color: #999999ff;
   border-radius: 1rem;
   font-size: 0.9rem;
+  margin-top: 10px;
 `;
 
 // 텍스트를 줄바꿈 처리

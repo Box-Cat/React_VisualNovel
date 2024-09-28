@@ -13,6 +13,7 @@ const StyledOptionListContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 1; 
 `;
 
 const OptionListContainer = ({children}) => {

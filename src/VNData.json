@@ -61,10 +61,9 @@
       },
       "Page5": {
         "Background": "../src/assets/furryForest1.png",
-        "Character": "코미",
-        "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
-        "PageText": "5...",
-        "EventScene": "../src/assets/field1.jpg"
+        "Character": "",
+        "Sprite": [],
+        "PageText": "5..."
       },
       "Page6": {
         "Background": "../src/assets/field1.jpg",

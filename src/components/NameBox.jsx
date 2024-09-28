@@ -1,13 +1,15 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const StyledNameBox = styled.h2`
-    flex: 1;
-  `;
+  flex: 1;
+  position: absolute;  
+  top: 10px; 
+  left: 10px;  
+  z-index: 2;  
+`;
 
 
 const NameBox = ({name}) => {
-  // props로부터 name 속성을 추출
 
   return (
     <>
@@ -15,7 +17,6 @@ const NameBox = ({name}) => {
     </>
   );
 };
-
 
 
 export default NameBox;

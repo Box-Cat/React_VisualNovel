@@ -9,8 +9,8 @@ const StyledNameTextBox = styled.div`
   min-width: 20rem;
   min-height: 10rem;
   border-radius: 1rem;
+  position: relative;
 `;
-
 
 
 const NameTextBox = ({children}) => {

@@ -7,6 +7,7 @@ const StyledProfileImage = styled.div`
   flex-wrap: wrap; 
   width: 100%;
   height: 100%; 
+  min-height: 200px; 
 `;
 
 const StyledImg = styled.img`
@@ -17,20 +18,20 @@ const StyledImg = styled.img`
 `;
 
 const ProfileImage = ({ sprites }) => {
-
   return (
     <StyledProfileImage>
-      {sprites.map(({ character, sprite, brightness }, index) => {
-        return(
+      {sprites.length > 0 ? (
+        sprites.map(({ character, sprite, brightness }, index) => (
           <StyledImg
             key={index}
             src={sprite}
             alt={character}
             brightness={brightness} 
           />
-        )
-
-      })}
+        ))
+      ) : (
+        <div style={{ width: '200px', height: '200px', visibility: 'hidden' }} /> // 비어 있을 경우 공간 유지
+      )}
     </StyledProfileImage>
   );
 };
