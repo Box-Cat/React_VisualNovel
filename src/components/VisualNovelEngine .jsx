@@ -36,23 +36,16 @@ const VisualNovelEngine = () => {
     if (action === 'before') handleBeforePage();
     else if (action === 'next') handleNextPage();
   };
-
   
   const page = data.Scene1.PAGES['Page' + currentPage];
-  const sprites = Array.isArray(page.Sprite)
-    ? page.Sprite.map((s) => {
+
+  const sprites = page.Sprite.map((s) => {
         const character = Object.keys(s)[0];
         return {
           character,
           sprite: data.Characters[character][s[character]],
         };
-      })
-    : [
-        {
-          character: page.Character,
-          sprite: data.Characters[page.Character][page.Sprite],
-        },
-      ];
+      });
 
   return (
     <Background data={data}>

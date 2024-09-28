@@ -14,7 +14,7 @@ const StyledTextBox = styled.div`
   font-size: 0.9rem;
 `;
 
-// 텍스트를 줄바꿈 처리하는 함수
+// 텍스트를 줄바꿈 처리
 const formatText = (text) => {
   return text.split('\n').map((line, index) => (
     <span key={index}>
@@ -29,14 +29,13 @@ const TextBox = ({text, typingSpeed = 20}) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  
+  //타이핑 효과  
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeoutId = setTimeout(() => {
         setDisplayText(prev => prev + text[currentIndex]);
         setCurrentIndex(prev => prev + 1);
       }, typingSpeed);
-
       return () => clearTimeout(timeoutId);
     }
   }, [currentIndex, text, typingSpeed]);

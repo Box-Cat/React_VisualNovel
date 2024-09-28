@@ -37,52 +37,52 @@
       },
       "Page1": {
         "Character": "버터",
-        "Sprite": "Happy",
+        "Sprite": [{ "버터": "Happy" }],
         "PageText": "코미, 낮잠 잔거야?"
       },
       "Page2": {
         "Character": "코미",
-        "Sprite": "Peeved",
+        "Sprite": [{ "코미": "Peeved" }],
         "PageText": "맞아.\n 낮잠을 잤어. 내 말 좀 잘 들어봐.\n 내 볼에 새겨진 이 낫과 망치가 보여?\n이건  세계수의 계시임에 틀림없어."
       },
       "Page3": {
-        "Character": "에르핀,네르",
-        "Sprite": [{ "버터": "Peeved" }, { "에르핀": "Peeved" }],
-        "PageText": "3Yeah..."
+        "Character": "버터",
+        "Sprite": [{ "버터": "Peeved" }],
+        "PageText": "그건 그냥, 배게에 눌려서 생긴 주름 아니야?"
       },
       "Page4": {
         "Character": "코미",
-        "Sprite": "Happy",
-        "PageText": "4Good luck everyone! I'll be taking the quiz myself."
+        "Sprite": [{ "코미": "Peeved" }],
+        "PageText": "이 볼을 잘 봐봐. 바나의 대장간에 보던 것과 비슷하지 않아?"
       },
       "Page5": {
         "Character": "코미",
-        "Sprite": "Thinking",
+        "Sprite": [{ "코미": "Thinking" }],
         "PageText": "5..."
       },
       "Page6": {
         "Character": "코미",
-        "Sprite": "Peeved",
+        "Sprite": [{ "코미": "Peeved" }],
         "PageText": "6........."
       },
       "Page7": {
         "Character": "에르핀",
-        "Sprite": "Happy",
+        "Sprite": [{ "에르핀": "Peeved" }],
         "PageText": "7Hey, she's having trouble!"
       },
       "Page8": {
         "Character": "버터",
-        "Sprite": "Thinking",
+        "Sprite": [{ "버터": "Thinking" }],
         "PageText": "8Yikes..."
       },
       "Page9": {
         "Character": "교주",
-        "Sprite": "Thinking",
+        "Sprite": [{ "교주": "Thinking" }],
         "PageText": "9Thank you for reading!"
       },
       "Page10": {
         "Character": "교주",
-        "Sprite": "Happy",
+        "Sprite": [{ "교주": "Thinking" }],
         "PageText": "10 ",
         "Options": {
           "Restart?": 0,
@@ -92,81 +92,11 @@
       },
       "Page11": {
         "Character": "교주",
-        "Sprite": "Happy",
-        "PageText": "11 오와리다",
-        "NextPage": "END"
-      }
-    }
-  },
-  "Scene2": {
-    "Background": "../src/assets/field1.jpg",
-    "PAGES": {
-      "Page0": {
-        "Character": "코미",
-        "Sprite": [{ "코미": "Happy" }, { "버터": "Happy" }],
-        "PageText": "0We're having a pop quiz today!"
-      },
-      "Page1": {
-        "Character": "코미",
-        "Sprite": "Happy",
-        "PageText": "1And just so you know, the questions were made for 교주 by Miss Smith next door. "
-      },
-      "Page2": {
-        "Character": "버터",
-        "Sprite": "Peeved",
-        "PageText": "2Ms. Smith's quizzes are always harder than 코미's."
-      },
-      "Page3": {
-        "Character": "에르핀,네르",
-        "Sprite": [{ "버터": "Peeved" }, { "에르핀": "Peeved" }],
-        "PageText": "3Yeah..."
-      },
-      "Page4": {
-        "Character": "코미",
-        "Sprite": "Happy",
-        "PageText": "4Good luck everyone! I'll be taking the quiz myself."
-      },
-      "Page5": {
-        "Character": "코미",
-        "Sprite": "Thinking",
-        "PageText": "5..."
-      },
-      "Page6": {
-        "Character": "코미",
-        "Sprite": "Peeved",
-        "PageText": "6........."
-      },
-      "Page7": {
-        "Character": "에르핀",
-        "Sprite": "Happy",
-        "PageText": "7Hey, she's having trouble!"
-      },
-      "Page8": {
-        "Character": "버터",
-        "Sprite": "Thinking",
-        "PageText": "8Yikes..."
-      },
-      "Page9": {
-        "Character": "교주",
-        "Sprite": "Thinking",
-        "PageText": "9Thank you for reading!"
-      },
-      "Page10": {
-        "Character": "교주",
-        "Sprite": "Happy",
-        "PageText": "10 ",
-        "Options": {
-          "Restart?": 0,
-          "Finish?": 11,
-          "Another?": 3
-        }
-      },
-      "Page11": {
-        "Character": "교주",
-        "Sprite": "Happy",
+        "Sprite": [{ "교주": "Thinking" }],
         "PageText": "11 오와리다",
         "NextPage": "END"
       }
     }
   }
+  
 }
