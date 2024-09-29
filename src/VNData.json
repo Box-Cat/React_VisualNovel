@@ -30,6 +30,7 @@
   "Scene1": {
     "PAGES": {
       "Page0": {
+        "BGM": "../src/assets/A Year Ago (Instrumental) - NEFFEX.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
@@ -60,6 +61,7 @@
         "PageText": "이 볼을 잘 봐봐. \n 바나의 대장간에 보던 것과 비슷하지 않아?"
       },
       "Page5": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/eventScene.png",
         "Character": "",
         "Sprite": []
