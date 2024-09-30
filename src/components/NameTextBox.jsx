@@ -13,10 +13,12 @@ const StyledNameTextBox = styled.div`
 `;
 
 
-const NameTextBox = ({children}) => {
+const NameTextBox = React.memo(({children}) => {
   return (
     <StyledNameTextBox>{children}</StyledNameTextBox>
   )
-}
+});
+
+NameTextBox.displayName = 'NameTextBox';
 
 export default NameTextBox

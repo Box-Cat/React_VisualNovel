@@ -35,6 +35,11 @@ const TextBox = React.memo(({ text, typingSpeed = 20 }) => {
   
   // 타이핑 효과  
   useEffect(() => {
+    setDisplayText('');
+    setCurrentIndex(0);
+  }, [text]);
+
+  useEffect(() => {
     if (text && currentIndex < text.length) {
       const timeoutId = setTimeout(() => {
         setDisplayText(prev => prev + text[currentIndex]);
