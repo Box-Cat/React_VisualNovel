@@ -8,7 +8,7 @@ const StyledTextBox = styled.div`
   max-height: 10rem;
   overflow-y: auto; 
   padding: 1rem;
-  background-color: ${({ text }) => (text ? '#999999ff' : 'transparent')}; 
+  background-color: ${({ $text }) => ($text ? '#999999ff' : 'transparent')}; 
   border-radius: 1rem;
   font-size: 0.9rem;
   margin-top: 10px;
@@ -45,7 +45,7 @@ const TextBox = ({ text, typingSpeed = 20 }) => {
   }, [currentIndex, text, typingSpeed]);
 
   return (
-    <StyledTextBox text={text}>
+    <StyledTextBox $text={text}>
       {formatText(displayText)}
     </StyledTextBox>
   );

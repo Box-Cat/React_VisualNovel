@@ -9,7 +9,7 @@ const Background = ({ backgroundImage, children }) => {
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
-    background-image: url(${backgroundImage});
+    background-image: url(${(props) => props.$backgroundImage});
   `;
 
   const StyledMainBox = styled.div`
@@ -20,7 +20,7 @@ const Background = ({ backgroundImage, children }) => {
   `;
 
   return (
-    <StyledBackground>
+    <StyledBackground $backgroundImage={backgroundImage}>
       <StyledMainBox>
         {children}
       </StyledMainBox>

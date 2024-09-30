@@ -25,7 +25,7 @@ const ProfileImage = ({ sprites }) => {
             key={index}
             src={sprite}
             alt={character}
-            brightness={brightness} 
+            $brightness={brightness} 
           />
         ))
       ) : (
