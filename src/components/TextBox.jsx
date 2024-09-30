@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledTextBox = styled.div`
@@ -29,7 +29,7 @@ const formatText = (text) => {
   ));
 };
 
-const TextBox = ({ text, typingSpeed = 20 }) => {
+const TextBox = React.memo(({ text, typingSpeed = 20 }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -41,7 +41,7 @@ const TextBox = ({ text, typingSpeed = 20 }) => {
         setCurrentIndex(prev => prev + 1);
       }, typingSpeed);
       return () => clearTimeout(timeoutId);
-    }
+    } 
   }, [currentIndex, text, typingSpeed]);
 
   return (
@@ -49,6 +49,8 @@ const TextBox = ({ text, typingSpeed = 20 }) => {
       {formatText(displayText)}
     </StyledTextBox>
   );
-};
+});
+
+TextBox.displayName = 'TextBox';
 
 export default TextBox;

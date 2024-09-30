@@ -9,12 +9,15 @@ import Button from './Button';
 import OptionListContainer from './OptionListContainer';
 import OptionList from './OptionList';
 import ButtonContainer from './ButtonContainer';
+import SettingButtonsContainer from './SettingButtonsContainer';
+import SettingButton from './SoundButton';
 
 const VisualNovelEngine = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState(null);
   const [audio, setAudio] = useState(null);
   const [currentBGM, setCurrentBGM] = useState(null);
+  const [isMuted, setIsMuted] = useState(false);
   const BGM_VOLUME = 0.3; 
 
   useEffect(() => {
@@ -27,7 +30,7 @@ const VisualNovelEngine = () => {
       const pageBGM = page.BGM;
 
       // 현재 페이지의 BGM이 있고, 현재 BGM과 다를 경우
-      if (pageBGM && pageBGM !== currentBGM) {
+      if (isMuted===false&&pageBGM && pageBGM !== currentBGM) {
         if (audio) {
           audio.pause();  
         }
@@ -52,6 +55,15 @@ const VisualNovelEngine = () => {
       }
     };
   }, [data, currentPage]);
+
+  const toggleAudio = () => {
+    setIsMuted((prev) => {
+      if (audio) {
+        audio.volume = prev ? BGM_VOLUME : 0; //노래가 끊기면 안되니, pause가 아님
+      }
+      return !prev;
+    });
+  };
 
   if (!data) return <div>Loading...</div>;
 
@@ -84,7 +96,12 @@ const VisualNovelEngine = () => {
   });
 
   return (
+
+    <>
     <Background backgroundImage={page.Background}>
+      <SettingButtonsContainer>
+        <SettingButton  toggleAudio={toggleAudio} isMuted={isMuted}/>
+      </SettingButtonsContainer>
       {page.Options && (
         <OptionListContainer>
           {Object.keys(page.Options).map((option, index) => (
@@ -111,6 +128,7 @@ const VisualNovelEngine = () => {
         </ButtonContainer>
       </NameTextBox>
     </Background>
+    </>
   );
 };
 

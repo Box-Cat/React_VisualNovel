@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledNameBox = styled.h2`
@@ -9,14 +10,15 @@ const StyledNameBox = styled.h2`
 `;
 
 
-const NameBox = ({name}) => {
+const NameBox = React.memo(({name}) => {
 
   return (
     <>
       <StyledNameBox>{name}</StyledNameBox>
     </>
   );
-};
+});
 
+NameBox.displayName = 'NameBox';
 
 export default NameBox;
