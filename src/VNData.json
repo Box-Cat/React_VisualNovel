@@ -37,24 +37,28 @@
         "PageText": "버터, 나 오늘 기도를 하다가 세계수에게 계시를 받았어."
       },
       "Page1": {
+        "BGM": "../src/assets/A Year Ago (Instrumental) - NEFFEX.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "코미, 낮잠 잔거야?"
       },
       "Page2": {
+        "BGM": "../src/assets/A Year Ago (Instrumental) - NEFFEX.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
         "PageText": "맞아. 낮잠을 잤어. 내 말 좀 잘 들어봐. \n 내 볼에 새겨진 이 낫과 망치가 보여? \n 이건  세계수의 계시임에 틀림없어."
       },
       "Page3": {
+        "BGM": "../src/assets/A Year Ago (Instrumental) - NEFFEX.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "그건 그냥, 배게에 눌려서 생긴 주름 아니야?"
       },
       "Page4": {
+        "BGM": "../src/assets/A Year Ago (Instrumental) - NEFFEX.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "코미",
         "Sprite": [{ "코미": "Happy","Brightness":"1" }, { "버터": "Happy","Brightness":"0.3" }],
@@ -67,30 +71,35 @@
         "Sprite": []
       },
       "Page6": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/eventScene.png",
         "Character": "",
         "Sprite": [],
         "PageText": "빠악!!!"
       },
       "Page7": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "에르핀",
         "Sprite": [{ "에르핀": "Happy","Brightness":"1" }],
         "PageText": "7Hey, she's having trouble!"
       },
       "Page8": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "버터",
         "Sprite": [{ "코미": "Happy","Brightness":"0.3" }, { "버터": "Happy","Brightness":"1" }],
         "PageText": "8Yikes..."
       },
       "Page9": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
         "PageText": "9Thank you for reading!"
       },
       "Page10": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],
@@ -102,6 +111,7 @@
         }
       },
       "Page11": {
+        "BGM": "../src/assets/Walking The Dog - Jeremy Korpas.mp3",
         "Background": "../src/assets/field1.jpg",
         "Character": "교주",
         "Sprite": [{ "교주": "Thinking" }],

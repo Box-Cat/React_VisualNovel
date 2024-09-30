@@ -29,7 +29,7 @@ const VisualNovelEngine = () => {
       const page = data.Scene1.PAGES['Page' + currentPage];
       const pageBGM = page.BGM;
 
-      // 현재 페이지의 BGM이 있고, 현재 BGM과 다를 경우
+      // BGM이 바뀌면 새로 실행
       if (isMuted===false&&pageBGM && pageBGM !== currentBGM) {
         if (audio) {
           audio.pause();  
@@ -41,9 +41,7 @@ const VisualNovelEngine = () => {
         newAudio.play();
         setAudio(newAudio);
         setCurrentBGM(pageBGM); 
-      } 
-      // 페이지에 BGM이 없고, 현재 BGM이 있을 경우
-      else if (!pageBGM && currentBGM) {
+      } else {
         return;
       }
     }
