@@ -16,6 +16,7 @@ const VisualNovelEngine = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState(null);
   const [audio, setAudio] = useState(null);
+  const [effectAudio, setEffectAudio] = useState(null);
   const [currentBGM, setCurrentBGM] = useState(null);
   const [isMuted, setIsMuted] = useState(false);
   const BGM_VOLUME = 0.3; 
@@ -30,7 +31,7 @@ const VisualNovelEngine = () => {
       const pageBGM = page.BGM;
 
       // BGM이 바뀌면 새로 실행
-      if (isMuted===false&&pageBGM && pageBGM !== currentBGM) {
+      if (isMuted === false && pageBGM && pageBGM !== currentBGM) {
         if (audio) {
           audio.pause();  
         }
@@ -63,16 +64,40 @@ const VisualNovelEngine = () => {
     });
   };
 
+  
+  const playEffectBGM = (effectBGM) => {
+    if (effectBGM) {
+      if (effectAudio) {
+        effectAudio.pause(); 
+      }
+      const newEffectAudio = new Audio(effectBGM);
+      newEffectAudio.play();
+      setEffectAudio(newEffectAudio); 
+    }
+  };
+
   if (!data) return <div>Loading...</div>;
 
   const handleBeforePage = () => {
     if (currentPage === 0) return;
-    setCurrentPage(currentPage - 1);
+
+    const prevPage = currentPage - 1;
+    const effectBGM = data.Scene1.PAGES['Page' + prevPage]?.EffectBGM;
+    
+    // 효과음 재생
+    playEffectBGM(effectBGM);
+
+    setCurrentPage(prevPage);
   };
 
   const handleNextPage = () => {
     const nextPage = data.Scene1.PAGES['Page' + currentPage].NextPage;
     if (nextPage !== undefined) return;  // "NextPage"가 있으면 Next 버튼 비활성화
+
+    const effectBGM = data.Scene1.PAGES['Page' + (currentPage + 1)]?.EffectBGM;
+ 
+    playEffectBGM(effectBGM);
+
     setCurrentPage(currentPage + 1);
   };
 
@@ -94,38 +119,33 @@ const VisualNovelEngine = () => {
   });
 
   return (
-
     <>
-    <Background backgroundImage={page.Background}>
-      <SettingButtonsContainer>
-        <SettingButton  toggleAudio={toggleAudio} isMuted={isMuted}/>
-      </SettingButtonsContainer>
-      {page.Options && (
-        <OptionListContainer>
-          {Object.keys(page.Options).map((option, index) => (
-            <OptionList
-              key={index}
-              onClick={() => handleOptionClick(page.Options[option])}
-            >
-              {option}
-            </OptionList>
-          ))}
-        </OptionListContainer>
-      )}
-      <ProfileImage sprites={sprites} />
-      <NameTextBox>
-        <NameBox name={page.Character} />
-        <TextBox text={page.PageText} />
-        <ButtonContainer>
-          <Button onClick={handleBeforePage}>
-            Before
-          </Button>
-          <Button onClick={handleNextPage}>
-            Next
-          </Button>
-        </ButtonContainer>
-      </NameTextBox>
-    </Background>
+      <Background backgroundImage={page.Background}>
+        <SettingButtonsContainer>
+          <SettingButton toggleAudio={toggleAudio} isMuted={isMuted} />
+        </SettingButtonsContainer>
+        {page.Options && (
+          <OptionListContainer>
+            {Object.keys(page.Options).map((option, index) => (
+              <OptionList
+                key={index}
+                onClick={() => handleOptionClick(page.Options[option])}
+              >
+                {option}
+              </OptionList>
+            ))}
+          </OptionListContainer>
+        )}
+        <ProfileImage sprites={sprites} />
+        <NameTextBox>
+          <NameBox name={page.Character} />
+          <TextBox text={page.PageText} />
+          <ButtonContainer>
+            <Button onClick={handleBeforePage}>Before</Button>
+            <Button onClick={handleNextPage}>Next</Button>
+          </ButtonContainer>
+        </NameTextBox>
+      </Background>
     </>
   );
 };
