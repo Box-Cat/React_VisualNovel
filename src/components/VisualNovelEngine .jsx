@@ -140,10 +140,14 @@ const VisualNovelEngine = () => {
         <NameTextBox>
           <NameBox name={page.Character} />
           <TextBox text={page.PageText} />
-          <ButtonContainer>
-            <Button onClick={handleBeforePage}>Before</Button>
-            <Button onClick={handleNextPage}>Next</Button>
-          </ButtonContainer>
+          {
+              !page.Options && (
+                <ButtonContainer>
+                <Button onClick={handleBeforePage}>Before</Button>
+                <Button onClick={handleNextPage}>Next</Button>
+              </ButtonContainer>
+              )
+          }
         </NameTextBox>
       </Background>
     </>
